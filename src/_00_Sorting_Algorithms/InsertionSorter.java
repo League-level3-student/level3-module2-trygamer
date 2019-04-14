@@ -12,10 +12,21 @@ public class InsertionSorter extends Sorter {
 	void sort(int[] array, SortingVisualizer display) {		
 		//1. make a for loop that starts at 1 and goes through 
 		// the length of the array 
-
+for(int i = 1 ; i< array.length; i++) {
+	
+}
 			//2. make another for loop that starts at i and counts down
         	//   while j is greater than 0
 
+while (j>0) {
+	for(int i = i ; i< array.length; i--) {
+		
+		if(arrj == j -1) {
+			
+		}
+		
+	}
+}
 				//3. if the element at j is less than the element at j - 1,
             	//   then swap them
 	}

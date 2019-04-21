@@ -11,23 +11,31 @@ public class InsertionSorter extends Sorter {
 	@Override
 	void sort(int[] array, SortingVisualizer display) {		
 		//1. make a for loop that starts at 1 and goes through 
+	
 		// the length of the array 
 for(int i = 1 ; i< array.length; i++) {
 	
-}
+
 			//2. make another for loop that starts at i and counts down
         	//   while j is greater than 0
 
-while (j>0) {
-	for(int i = i ; i< array.length; i--) {
+
+	for(int j = i ; j> 0; j--) {
 		
-		if(arrj == j -1) {
-			
+		if(array[j] < array[j-1]) {
+			int el1 = array[j];
+			int el2 = array[j-1];
+
+			array[j] = el2;
+			array[j- 1] = el1;
+			 display.updateDisplay();
+
 		}
 		
 	}
-}
+
 				//3. if the element at j is less than the element at j - 1,
             	//   then swap them
+	}
 	}
 }

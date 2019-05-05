@@ -26,7 +26,7 @@ public class _01_BinarySearch {
 
             //4. if the array element at mid is equal to value
             //   then return mid
-			if (mid == value) {
+			if (array[mid] == value) {
 				return mid;
 			}
             //5. if the array element at mid is greater than value
@@ -41,7 +41,7 @@ public class _01_BinarySearch {
 			
             //6. return the value returned from a call to the binarySearch
             //   method. Use mid + 1 as the start, and pass in end.
-			return binarySearch(array, mid-1, end, value);
+			return binarySearch(array, mid+1, end, value);
 			
 		}
 		
